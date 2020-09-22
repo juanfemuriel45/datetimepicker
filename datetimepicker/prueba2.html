@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+  <title>Ejemplo date time</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- Ajax-->
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<!-- Datetimepicker-->
+	<link rel="stylesheet" href="lib/data-time/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- fin Datetimepicker-->
+
+</head>
+<body id="page-top">
+  <div class="container-fluid">
+     <!-- data-time  https://www.jqueryscript.net/time-clock/Date-Time-Picker-Bootstrap-4.html-->
+	   <div class="form-row">
+    		<div class="form-group col-sm-4" >
+    			<label>Inicio: </label>
+    			<input type='text' class="form-control" id='datetimepicker1' name="inicio" placeholder="MM-DD-AAAA HH:MM" id="inicio" />
+    		</div>
+
+				<script type="text/javascript">
+					$(function () {
+						$('#datetimepicker1').datetimepicker();
+					});
+				</script>
+				<!-- fin data-time-->
+
+				<!-- data-time2 -->
+				<div class="form-group col-sm-4" >
+					<label>Fin: </label>
+					<input type='text' class="form-control" id='datetimepicker2' name="fin" placeholder="MM-DD-AAAA HH:MM" />
+				</div>
+
+				<script type="text/javascript">
+					$(function () {
+						$('#datetimepicker2').datetimepicker();
+					});
+				</script>
+		 </div>
+        <!-- fin data-time-->
+  </div>
+<!-- Datetimepicker-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js" type="text/javascript"></script>
+<script src="lib/data-time/js/bootstrap-datetimepicker.min.js"></script>
+<!-- fin Datetimepicker-->
+</body>
+</html>
